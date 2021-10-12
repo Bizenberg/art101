@@ -1,7 +1,12 @@
 #my-portrait {
     width: 250px;
     height: auto;
+    border: 8px solid #FFEBCD;
 }
 p {
     font-family: Arial, Helvetica, sans-serif-sans;
+    font-size: 23px;
+}
+body {
+    background-color: #6495ED
 }
