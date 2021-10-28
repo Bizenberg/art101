@@ -11,16 +11,13 @@ function sortUserName() {
  var userName = window.prompt("Hi! Please tell me your name so I can fix it.");
  console.log("userName =", userName);
 
-
 //convert string to lowercase
 var lowerCase = userName.toLowerCase('');
  console.log("lowerCase =", lowerCase);
 
-
  //split string into Array
  var newArray = lowerCase.split('');
  console.log("newArray =", newArray);
-
 
  //sort the Array
  var newArraySort = newArray.sort();
