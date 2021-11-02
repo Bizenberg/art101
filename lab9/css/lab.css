@@ -1,0 +1,17 @@
+
+h2 {
+    text-shadow: 2px 2px #7B68EE;
+}
+h1 {
+    text-shadow: 1px 1px #7B68EE;
+}
+p {
+    font-size: 20px;
+    font-family: Times; color: Black;
+}
+#purple {
+  text-shadow: 6px 6px lightblue;
+}
+#next {
+  text-shadow: 10px 10px white
+}
