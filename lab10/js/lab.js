@@ -23,6 +23,7 @@ new1El.innerHTML = "";
 //add function to the button
   button.addEventListener('click', function(scrambleText){
     inputValue = document.getElementById("feed").value;
+    
 //new array
     var newArray = inputValue.split('');
 //sort array
