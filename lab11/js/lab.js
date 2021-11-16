@@ -1,17 +1,31 @@
+/*
+ * Author: Benjamin Izenberg <bizenberg@ucsc.edu>
+ * Created: 11.3.21
+ * License: Public Domain
+ * File: art101/lab10/js/lab.js
+ * Link: bizenberg.github.io/art101
+ */
 
-$("#challenge").append("<button id='button1'>Button</button>");
-$("#problem").append("<button id='button2'>Button</button>");
-$("#results").append("<button id='button3'>Button</button>");
+//identify the button for the challenge box
+$("#challenge").append("<button id='c-button'>Button</button>");
+//identify the button for the problem box
+$("#problem").append("<button id='p-button'>Button</button>");
+//identify the button for the results box
+$("#results").append("<button id='r-button'>Button</button>");
 
 
-$("#button1").click(function(){
+//button's function to change the color
+//for challenges
+$("#c-button").click(function(){
   $(this).parent().toggleClass("special");
 })
 
-$("#button2").click(function(){
+//for problems
+$("#p-button").click(function(){
   $(this).parent().toggleClass("special");
 })
 
-$("#button3").click(function(){
+//for results
+$("#r-button").click(function(){
   $(this).parent().toggleClass("special");
 })
