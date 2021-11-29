@@ -6,11 +6,9 @@
  * Link: bizenberg.github.io/art101
  */
 
-
-
 var outputEl = document.getElementById("output");
 
-
+//fizzbizz function
 function FizzBuzz() {
   let x = '<p>'+'</p>';
 
