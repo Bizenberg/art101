@@ -1,4 +1,12 @@
-var myUrl = "https://chroniclingamerica.loc.gov/data/batches/";
+/*
+ * Author: Benjamin Izenberg <bizenberg@ucsc.edu>
+ * Created: 11.29.21
+ * License: Public Domain
+ * File: art101/lab14/js/lab.js
+ * Link: bizenberg.github.io/art101
+ */
+
+var myUrl = "https://random.dog/woof.json";
 
 $("#activate").click(callAjax);
 
@@ -20,7 +28,7 @@ $.ajax({
 .done(function(data) {
     console.log("Success:", data);
     //$("#output").html(JSON.stringify(data));
-    var imgUrl = "https://chroniclingamerica.loc.gov/data/batches/" + data.url;
+    var imgUrl =  data.url;
     var imgTag = "<img src=" + imgUrl + ">";
     $("#output").html(imgTag);
 })
@@ -31,35 +39,3 @@ $.ajax({
 })
 
 }
-const xhr = new XMLHttpRequest();
-const url = 'https://chroniclingamerica.loc.gov/suggest/titles/?q=manh';
-xhr.open('GET', url);
-xhr.onreadystatechange = someHandler;
-xhr.send();
-
-//HTTP/1.1 200 OK
-//Date: Mon, 28 Mar 2011 19:45:34 GMT
-//Expires: Tue, 29 Mar 2011 19:45:37 GMT
-//ETag: "7d786bec2ca003d86009f8ccdfd72912"
-Cache-Control: max-age="86400";
-Access-Control-Allow-Origin: *;
-Access-Control-Allow-Headers: X-Requested-With;
-Content-Length: "7045"
-//Last-Modified: Mon, 28 Mar 2011 19:45:37 GMT
-Content-Type: application/x-suggestions+json
-
-[
-  "manh",
-    [
-      "Manhasset life. (Manhasset, N.Y.) 19??-19??",
-      "Manhasset mail. (Manhasset, N.Y.) 1927-1986"
-    ],
-    [
-      "sn97063690",
-      "sn95071148"
-    ],
-    [
-      "https://chroniclingamerica.loc.gov/lccn/sn97063690/",
-      "https://chroniclingamerica.loc.gov/lccn/sn95071148/"
-    ]
-]
